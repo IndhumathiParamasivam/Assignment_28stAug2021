@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>     
+        <script>
+            function myFunc()
+            {
+                window.alert("Click on mail icon for contact form!");
+            }
+        </script>
+        <style>
+            .icons{
+                font-size: 28px;
+                position: absolute;
+                left:14px;
+            }
+            .container
+            {
+                display: flex;
+                border-style: hidden;
+                padding: 40px;
+                flex-direction: column;
+                color: rgb(236, 229, 229);
+                width: 20%;
+            }
+            #container1
+                {
+                display: flex;
+                align-items: center;
+                align-content: center;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 100px;
+            }
+            body
+            {
+                background-color: black;
+            }
+            button
+            {
+                padding: 10%;
+                border-radius: 20px;
+                background-color: white;
+                border: hidden;
+                font-weight: bold;
+            }
+            #block1
+            {
+                background-color: rgb(240, 142, 22);
+                border-top-left-radius: 7px;
+                border-top-right-radius: 7px;
+            }
+            
+            #btn1{
+                color: rgb(240, 142, 22);
+                }
+            #btn2
+            {
+               color:rgb(5, 151, 153); 
+            }
+            #btn3
+            {
+                color:rgb(3, 59, 66);
+            }
+            #block2
+            {
+                background-color:rgb(5, 151, 153);
+            }
+            #block3
+            {
+                background-color:rgb(3, 59, 66);
+                border-bottom-left-radius: 7px;
+                border-bottom-right-radius: 7px;
+            }
+            p{
+                margin-bottom: 50px;
+                font-family: serif;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 15pt;
+                height: 120px;
+            }
+            h3{
+                font-family: "Lucida Console", "Courier New", monospace;
+            }
+            span
+                {
+                    border-radius: 50%;
+                    padding: 8px 18px;
+                }
+                .icon{
+                    position:relative;
+                }
+                 #shadow1
+                 {
+                     background-color: rgb(184, 108, 17);
+                 } 
+                 #shadow2
+                 {
+                     background-color: rgb(5, 97, 99);
+                 }
+                 #shadow3
+                 {
+                     background-color: rgb(3, 39, 44);
+                 }
+                 #container2  a i
+                 {
+                     position: fixed;
+                     left:0px;
+                     background-color: rgb(253, 253, 253);
+                     padding:10px;
+                     border-radius: 50%;
+                     bottom: 0px;
+                     font-size: 50px;
+                     color: rgb(219, 53, 219);
+                 }
+                 #container2  a i:hover{
+                     transform: scale(1.5);
+                     color:rgb(52, 63, 214)
+                 }
+                 @media (min-width:981px)
+                 {
+                     #container1
+                     {
+                        flex-direction: row;
+                     }
+                     #block1
+                    {
+                    border-bottom-left-radius: 7px;
+                    border-top-right-radius: 0px;
+                    }
+                    #block3
+                     {
+                     border-top-right-radius: 7px;
+                     border-bottom-left-radius: 0px;
+                    }
+                    .container
+                    {
+                        width: 10%;
+                    }
+                    #container2  a i
+                    {
+                     font-size: 30px;
+                     }
+                   
+        }
+        </style>
+    </head>
+    <body onload="myFunc()">
+       <div id="container1"> <div id="block1" class="container">
+               <div class="icon"><span id="shadow1"></span><i class="fas fa-car-crash icons"></i></div> 
+                <h2>SEDANS</h2>
+                <p>Choose a  sedan for its affordability and excellent fuel economy.Ideal for cruising in the city or on your next road trip.</p>
+                <button onClick="location='https://en.wikipedia.org/wiki/Sedan_(automobile)'" id="btn1">Learn More</button>
+            </div>
+            <div id="block2" class="container">
+                <div class="icon"><span id="shadow2"></span><i class="fas fa-car-side icons"></i></div>
+                <h2>SUVS</h2>
+                <p>Take an SUV for its spacious interior,power, and versality. Perfect for your next family vacation and off-road adventures.</p>
+                <button  onClick="location='https://en.wikipedia.org/wiki/Sport_utility_vehicle'" id="btn2">Learn More</button>
+            </div>
+            <div id="block3" class="container">
+                <div class="icon"><span id="shadow3"></span><i class="fas fa-car-alt icons"></i></div>
+                <h2>LUXURY</h2>
+                <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort for a luxury rental and arrive in style.</p>
+                <button onClick="location='https://en.wikipedia.org/wiki/Luxury_car'" id="btn3">Learn More</button>
+            </div>
+        </div>
+        <div id="container2">
+            <a href="index1.html"><i class="fas fa-envelope"></i></a>
+        </div>
+    </body>
+</html>

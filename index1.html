@@ -1,0 +1,149 @@
+<html>
+   <head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <script>
+          function submission()
+          {
+              window.alert("Thanks for reaching out to us..we will contact you..Good Day!");
+          }
+          function myFunc()
+            {
+                window.alert("Click on mail icon for contact form!");
+            }
+      </script>
+      <style>
+           body{
+                background-color: black;
+                display: flex;
+                justify-content: space-between;
+           }
+           form{
+                display: flex;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                color: white;
+                flex-direction: column;
+                align-content: flex-start;
+                align-items: flex-start;
+                text-align: center;
+           }
+           form div
+           {
+               margin:40px;
+           }
+           h2{
+               color:red;
+           }
+           input,textarea,select
+           {
+            margin-left: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            color:rgb(8, 92, 74);
+            border:1.8px solid rgb(9, 142, 160) ;
+            
+           }
+           sup{
+               color:red;
+               font-size: 0.8em;
+           }
+           option
+           {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+            color: gray;
+           }
+           button
+            {
+                padding: 12px;
+                border-radius: 20px;
+                background-color: white;
+                border: hidden;
+                font-weight: bold;
+                width: 30%;
+                transition: all 1s;
+                border:1.8px solid rgb(9, 142, 160) ;
+            }
+            button:hover{
+                background-color: rgb(9, 142, 160);
+                color :white;
+                border-color: white;
+                font-style: italic;
+                font-size: 20px;
+            }
+            label{
+                float: left;
+            }
+
+            legend
+            {
+                color: rgb(209, 23, 23);
+                font-size: 30px;
+            }
+            #container2 a i
+                 {
+                     position: fixed;
+                     left:0px;
+                     background-color: rgb(255, 255, 255);
+                     padding:10px;
+                     border-radius: 50%;
+                     bottom: 0px;
+                     font-size: 50px;
+                     color: rgb(52, 63, 214);
+                 }
+                 #container2 a i:hover{
+                     transform: scale(1.5);
+                     color:rgb(219, 53, 219);
+                 }
+                 img{
+                     margin-top:15%;
+                     transform: rotate(-30deg);
+                     height:180px;
+                 }
+                 @media(min-width:981px)
+                 {
+                    #container2  a i
+                    {
+                     font-size: 30px;
+                     }
+                 }
+
+       </style>
+   </head> 
+<body onload="myFunc()">
+    <form>
+        <fieldset>
+            <legend>Contact Us!</legend>
+        <div>
+        <label for="name">Name :<sup>*</sup></label>
+    <input type="text" placeholder="Enter your Name" id="name" required></div>
+    <div><label for="eid">Email :<sup>*</sup></label>
+    <input id="eid" placeholder="Enter Your Email" type="email" required></div>
+    <div><label for="phone">Phone :<sup>*</sup></label>
+        <input id="phone" placeholder="Enter Your Phone-No" type="number" required></div>
+    <div class="inputs"><label for="cars">More Details About :<sup>*</sup></label>
+    <select id="cars" multiple>
+        <option>Hatchback</option>
+        <option>Sedan</option>
+        <option>SUV</option>
+        <option>MUV</option>
+        <option>Luxury</option>
+        <option>WAGON</option>
+        <option>CONVERTIBLE</option>
+    </select></div>
+    <div class="inputs">
+        <label id="msg">Any Additional Message:</label>
+        <textarea rows="10" cols="50"></textarea>
+    </div>
+    <div class="inputs"><label for="apttime">Would you like us to call After :<sup>*</sup></label><input type="time" id="apttime" name="apttime"
+        min="06:00" max="18:00" required></div>
+    <button onClick="submission()">Submit</button>
+</fieldset>
+</form>
+<img src="https://media.istockphoto.com/vectors/contact-us-written-airport-billboard-on-black-background-vector-id1291918390?b=1&k=6&m=1291918390&s=170667a&w=0&h=zIOV5WQpw03OADcnOcrq0I7aPY1adOQ-bQ45kPFDuH4=">
+<div id="container2">
+    <a href="index.html"><i class="fas fa-envelope-open"></i></a>
+</div>
+</body>
+</html>
